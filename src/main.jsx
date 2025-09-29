@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import { UserContextProvider } from './context/UserContext.jsx'
 import { CourseContextProvider } from './context/CoursesContext.jsx'
-export const server = "http://localhost:5000"
+export const server = "https://geto-demo.onrender.com/"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
   <UserContextProvider>
