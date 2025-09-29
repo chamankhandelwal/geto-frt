@@ -1,0 +1,60 @@
+/* Sticky layout support */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex: 1;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #023e8a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 16px;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #90e0ef;
+  transform: scale(1.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .footer-text {
+    font-size: 14px;
+  }
+
+  .social-links a {
+    font-size: 18px;
+    gap: 15px;
+  }
+}

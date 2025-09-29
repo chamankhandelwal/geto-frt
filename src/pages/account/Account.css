@@ -1,0 +1,116 @@
+.account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 55px;
+    margin-top: 35px;
+    
+}
+
+.profile-card {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 350px;
+    transition: transform 0.2s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-header {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.profile-header h2 {
+    margin: 0;
+    color: #023e8a;
+}
+
+.profile-header p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.info-item span {
+    color: #555;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.info-item strong {
+    color: #023e8a;
+    font-size: 1rem;
+    word-break: break-word;
+}
+
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+
+.dashboard-btn {
+    background-color: #023e8a;
+    color: white;
+}
+
+.dashboard-btn:hover {
+    background-color: #0353b3;
+}
+
+.logout-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.logout-btn:hover {
+    background-color: #495057;
+}
+.icon {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        width: 90%;
+        padding: 20px;
+    }
+}

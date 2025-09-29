@@ -1,0 +1,91 @@
+.home {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 60px 20px;
+  }
+}
+
+
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeSlideIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 0.8s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@media (max-width:768px) {
+    .home-content h1 {
+        font-size: 28px;
+    }
+}
+
+.home-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 0.8s ease forwards;
+    animation-delay: 1s;
+}
+
+@media (max-width:768px) {
+    .home-content p {
+        font-size: 16px;
+    }
+}
+
+.home-content button {
+    padding: 12px 24px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 0.8s ease forwards;
+    animation-delay: 1.5s;
+    cursor: pointer;
+}
+
+.auto-type {
+    display: inline-block;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+@keyframes blinkCursor {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.auto-type {
+    animation: blinkCursor 0.7s step-end infinite;
+}
+span{
+    color: #023e8a;
+}
+.common-btn:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}

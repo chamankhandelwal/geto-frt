@@ -1,0 +1,48 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box; /* prevents padding from causing overflow */
+  overflow-x: hidden; /* ensures no horizontal scrollbar */
+}
+
+header .logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: #023e8a;
+}
+
+@media (max-width: 768px) {
+  header .logo {
+    font-size: 18px;
+  }
+}
+
+header .link {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  header .link {
+    font-size: 18px;
+    gap: 0.5rem;
+  }
+}
+
+header .link a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+header .link a:hover {
+  color: #023e8a;
+}

@@ -1,0 +1,69 @@
+.study-wrapper {
+  padding: 30px 10px;
+  background-color: #f0f4f8;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.study-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.study-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.study-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.study-details h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.study-description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.study-details p {
+  font-size: 1rem;
+  color: #333;
+  margin: 8px 0;
+}
+
+.study-lecture-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0077b6;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.study-lecture-link:hover {
+  background-color: #005f8e;
+}
+
+.study-loading-message {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+}

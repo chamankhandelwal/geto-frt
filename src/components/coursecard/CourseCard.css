@@ -1,0 +1,128 @@
+.course-card {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.course-card:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    transform: translateY(-6px);
+}
+
+.course-img-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.course-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.course-card:hover .course-img {
+    transform: scale(1.05);
+}
+
+.course-content {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-content h3 {
+    font-size: 18px;
+    color: #111;
+    margin: 8px 0 5px;
+    font-weight: 600;
+}
+
+.price-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FFD700;
+    color: #03045e;
+    padding: 6px 12px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    animation: pulse 2s infinite;
+    clip-path: polygon(
+        10% 0%, 90% 0%, 100% 20%, 100% 80%, 90% 100%, 
+        10% 100%, 0% 80%, 0% 20%
+    );
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+}
+
+.course-card:hover .price-badge {
+    transform: scale(1.2);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+
+.course-content p {
+    font-size: 13px;
+    color: #555;
+    margin: 2px 0;
+}
+
+.course-content .duration {
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+    margin-top: 4px;
+}
+.course-card .common-btn {
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+.delete-btn{
+     background-color: #d53b3b; 
+    color: white;
+    border: none;
+    padding: 4px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 4px;
+}
+.delete-btn:hover{
+    background-color: #971111;
+}

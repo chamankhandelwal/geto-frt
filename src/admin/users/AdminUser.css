@@ -1,0 +1,111 @@
+/* AdminUser.css */
+
+.users {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f8f9fa; /* light background */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.users h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+thead {
+  background-color: #4f46e5;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+thead th {
+  padding: 1rem 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+  background-color: #e0e7ff;
+}
+
+tbody td {
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.btn {
+  background-color: #4f46e5; /* GetO purple */
+  color: #fff;
+  border: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #4338ca;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .users {
+    padding: 1rem;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    text-align: right;
+    font-size: 0.9rem;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4b5563;
+    text-align: left;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
