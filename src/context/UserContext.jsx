@@ -39,10 +39,14 @@ export const UserContextProvider = ({ children }) => {
         email,
         password,
       });
+      if (!data.activationToken) {
+      throw new Error("No activation token received");
+    }
       toast.success(data.message);
       localStorage.setItem("activationToken", data.activationToken);
-      setBtnLoading(false);
       navigate("/verify");
+      setBtnLoading(false);
+      
     } catch (error) {
       setBtnLoading(false);
       toast.error(error.response.data.message);

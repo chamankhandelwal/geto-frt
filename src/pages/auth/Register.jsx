@@ -44,6 +44,7 @@ const Register = () => {
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            autoComplete="current-password"
           />
           <button className="common-btn" type="submit" disabled={btnLoading}>{btnLoading?"Plese wait...":"Register"}</button>
           <p className="mt-3 link-p">
