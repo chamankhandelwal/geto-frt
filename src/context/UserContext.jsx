@@ -39,6 +39,7 @@ export const UserContextProvider = ({ children }) => {
         email,
         password,
       });
+      console.log("REGISTER RESPONSE:", data);
       if (!data.activationToken) {
       throw new Error("No activation token received");
     }
