@@ -24,8 +24,10 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   justify-content: center;
-  max-width: 600px;
   margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px;
 }
 
 .empty-message {

@@ -102,7 +102,7 @@ const AdminCourses = ({ user }) => {
                   id="title"
                   value={title}
                   onChange={(evt) => setTitle(evt.target.value)}
-                />
+                 required/>
 
                 <label htmlFor="description">Description</label>
                 <input
@@ -111,7 +111,7 @@ const AdminCourses = ({ user }) => {
                   id="description"
                   value={description}
                   onChange={(evt) => setDescription(evt.target.value)}
-                />
+               required />
 
                 <label htmlFor="price">Price</label>
                 <input
@@ -120,7 +120,7 @@ const AdminCourses = ({ user }) => {
                   id="price"
                   value={price}
                   onChange={(evt) => setPrice(evt.target.value)}
-                />
+                required/>
 
                 <label htmlFor="createdBy">Created By</label>
                 <input
@@ -129,14 +129,14 @@ const AdminCourses = ({ user }) => {
                   id="createdBy"
                   value={createdBy}
                   onChange={(evt) => setCreatedBy(evt.target.value)}
-                />
+               required />
 
                 <select
                   name="category"
                   id="category"
                   value={category}
                   onChange={(evt) => setCategory(evt.target.value)}
-                >
+                required>
                   <option value={""}>Select Semster</option>
                   {categories.map((el) => (
                     <option value={el} key={el}>
@@ -156,7 +156,7 @@ const AdminCourses = ({ user }) => {
                   type="file"
                   placeholder="Choose a thumbnail"
                   onChange={changeImageHandler}
-                />
+                required/>
                 {imagePvr && <img src={imagePvr} alt="" width={300} />}
                 <button
                   type="submit"
